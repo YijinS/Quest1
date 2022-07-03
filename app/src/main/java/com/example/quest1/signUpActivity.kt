@@ -13,7 +13,7 @@ class signUpActivity : AppCompatActivity() {
 //        회원 가입 버튼 눌렀을때의 로직 작성
         signUpBtn2.setOnClickListener {
 
-            Toast.makeText(this, "$(nameSet.text)님 회원가입 축하드립니다", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "${nameSet.text}님 회원가입 축하드립니다", Toast.LENGTH_SHORT).show()
             finish()
 
         }
