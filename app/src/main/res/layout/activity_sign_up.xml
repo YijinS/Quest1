@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signUpActivity">
+    tools:context=".signUpActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="아이디" />
+    <EditText
+        android:id="@+id/idSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일 입력"
+        android:maxLines="1"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="패스워드"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/pwSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="닉네임" />
+
+    <EditText
+        android:id="@+id/nameSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:maxLines="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/signUpBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입" />
+    </LinearLayout>
+
+
+</LinearLayout>
